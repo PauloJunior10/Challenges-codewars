@@ -1,6 +1,3 @@
-//https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/train/javascript
-
-// Você pode encontrar a agulha no palheiro?
 
 // Escreva uma função findNeedle() que receba um array cheio de lixo, mas contendo uma "agulha"
 
@@ -10,10 +7,16 @@
 
 // exemplo: ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
 
-function findNeedle(haystack) {
-    return "found the needle at position " + haystack.indexOf("needle");
-  }
+// DESAFIO, faça com que o resultado da função seja o mesmo independente de o array estar em maiúscula ou minúscula
 
-  const arr = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
-  
-  console.log(findNeedle(arr))
+const findNeedle = ( array )  => {
+   
+
+  let maiscula = array.map(obj => obj.toUpperCase())
+
+  return "encontrou a agulha na posição " + maiscula.indexOf("NEEDLE")
+}
+
+const arr = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+
+console.log(findNeedle(arr))
