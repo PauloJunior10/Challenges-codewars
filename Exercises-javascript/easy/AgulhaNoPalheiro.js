@@ -17,6 +17,6 @@ const findNeedle = ( array )  => {
   return "encontrou a agulha na posição " + maiscula.indexOf("NEEDLE")
 }
 
-const arr = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+const arr = ["hay", "junk", "hay", "hay", "moreJunk", "NeEdLe", "randomJunk"]
 
 console.log(findNeedle(arr))
