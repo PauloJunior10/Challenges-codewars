@@ -3,11 +3,11 @@
 function isIsogram(str){
     let i, j;
     str = str.toLowerCase();
-    for(i = 0; i < str.length; ++i)
-      for(j = i + 1; j < str.length; ++j)
+    for(i = 0; i < str.length; i++)
+      for(j = i + 1; j < str.length; j++)
         if(str[i] === str[j])
-          return ` ${false} pq a letra "${str[i]}" se repete ` ;
-    return true;
+          return ` ${false} porque a letra "${str[i]}" se repete ` ;
+    return `É ${true} pois nenhuma letra se repete`;
   }
 
-  console.log(isIsogram('aloha'))
+  console.log(isIsogram('bom'))

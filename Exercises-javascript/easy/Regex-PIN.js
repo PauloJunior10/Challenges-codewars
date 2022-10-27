@@ -23,4 +23,4 @@ function validatePIN (pin) {
   
   }
 
- console.log(validatePIN(["a",2,3,4,5,6]))
+ console.log(validatePIN([1,2,3,4,5,6]))
