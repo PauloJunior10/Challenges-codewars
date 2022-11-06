@@ -9,13 +9,20 @@
 // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 // XO("zzoo") => false
 
-function XO(str) {
-    let sum = 0;
-    for(let i=0; i<str.length; i++){
-      if(str[i].toLowerCase() == 'x') sum++;
-      if(str[i].toLowerCase() == 'o') sum--;
-    }
-    return sum == 0 ;
+// 1 modo
+// function XO(str) {
+//     let sum = 0;
+//     for(let i=0; i<str.length; i++){
+//       if(str[i].toLowerCase() == 'x') sum++;
+//       if(str[i].toLowerCase() == 'o') sum--;
+//     }
+//     return sum == 0 ;
+//   }
+
+// 2 modo
+function XO (str){
+    str = str.toLowerCase().split('');
+    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
   }
 
 
