@@ -11,10 +11,10 @@
 // A string de saída deve ser dois números separados por um único espaço, e o número mais alto é o primeiro.
 
 function highAndLow(numbers){
-  numbers = numbers.split(' ');
-  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
-}
-
-
-console.log(highAndLow("1 2 3 4 5"))
-console.log(highAndLow("27 23 3 4 35"))
+    numbers = numbers.split(' ');
+    return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+  }
+  
+  
+  console.log(highAndLow("1 2 3 4 5"))
+  console.log(highAndLow("27 23 3 4 35"))
