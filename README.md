@@ -1,2 +1,2 @@
 # Challenges-codewars
-challenges answered by me in code wars
+challenges answered by me in code wars and others.
