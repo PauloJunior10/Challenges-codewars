@@ -20,3 +20,5 @@ const findNeedle = ( array )  => {
 const arr = ["hay", "junk", "hay", "hay", "moreJunk", "NeEdLe", "randomJunk"]
 
 console.log(findNeedle(arr))
+
+// treinar cada vez mais
