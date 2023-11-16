@@ -1,31 +1,46 @@
-// Leet Code 704 Busca binária
-// https://www.youtube.com/watch?v=ig-ZjCO8Uk8&list=PL1F2RTnUh3hZmqrlafKclRQHzNr-U0o1f&index=1&t=7s&ab_channel=CassianoVellames
+// Sua tarefa é criar uma função que faça quatro operações matemáticas básicas.
 
-// Dado um array de inteiro chamado "nums" a qual ele é sorteado de forma ascendente, e um inteiro "target", escreva uma função para procurar o target dentro de nums. Se target existir então retorne seu index, do contrário, retorne -1.
+// A função deve ter três argumentos - operação(string/char), valor1(número), valor2(número).
+// A função deve retornar resultado de números após aplicar a operação escolhida.
 
-// exemplo
-// num = [1,2,3,4,5,6,7,8,9,0]
-// target = 9
-// index = 8
+// Exemplos(Operador, valor1, valor2) --> saída
+// ('+', 4, 7) --> 11
+// ('-', 15, 18) --> -3
+// ('*', 5, 5) --> 25
+// ('/', 49, 7) --> 7
 
-// ------------------------------- EXERCÍCIO SIMPLES
-
-
-// const array = [1,2,3,4,5,6,7,8,9,10,11]
-
-// let search = (nums, target) => { // function search
-//     for (let i = 0; i< nums.length; i++){
-//         if(nums[i] === target){
-//             return i
-//         }
-//     }
-//     return -1
+// function basicOp(operation, value1, value2)
+// {
+//   switch(operation){
+//     case '+': return value1 + value2;
+//     case '*': return value1 * value2;
+//     case '-': return value1 - value2;
+//     case '/': return value1 / value2;
+//   }
 // }
 
-// console.log(search(array,5))
+// console.log(basicOp("+", 10,4))
 
-// ----------------------EXERCÍCIO COMPLEXO
-// E se eu precisar encontrar o número 435.973 em um vetor de 100000000 de posições?
-//  O método seguinte só funciona se o array estiver ordenado de forma ordenada
+// ========================================
 
-const array = [1,2,3,4,5,6,7,8,9,10,11]
+// function basicOp(o, v1, v2) {
+//   if (o === "+") return v1 + v2;
+//   if (o === "-") return v1 - v2;
+//   if (o === "/") return v1 / v2;
+//   if (o === "*") return v1 * v2;
+// }
+
+// console.log(basicOp("+", 10, 4));
+
+// =======================
+
+const basicOperations = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+    "*": (a, b) => a * b,
+    "/": (a, b) => a / b,
+};
+
+const basicOp = (op, x, y) => basicOperations[op](x, y);
+
+console.log(basicOp("+", 10, 4));
